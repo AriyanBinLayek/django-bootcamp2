@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+            <h1>Shipping Address</h1>
+            <form class="card card-body bg-light" method="post" action=".">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button class="btn btn-primary">Proceed to payment</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
