@@ -1,0 +1,9 @@
+ALLOWED_HOSTS = ['django-bootcamp2-mbrochh.c9users.io']
+
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/ubuntu/workspace/project_assets/static/'
+MEDIA_ROOT = '/home/ubuntu/workspace/project_assets/media/'
+
+STRIPE_SECRET_KEY = 'sk_test_'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_'

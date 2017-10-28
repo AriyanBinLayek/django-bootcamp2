@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+           <H1>Browse Products</H1> 
+           <hr />
+        </div>
+    </div>
+    <div class="row">
+        {% for product in object_list %}
+            <div class="col-4">{% include "products/partials/product.html" with product=product %}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
